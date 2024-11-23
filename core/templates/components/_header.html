@@ -1,5 +1,45 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand text-white" href="#">Sistema de Gestão de Estoque (SGE)</a>
-  </div>
-</nav>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <!-- Logo ou Nome do Sistema -->
+      <a class="navbar-brand" href="#">
+        <i class="bi bi-bootstrap fs-4 me-2"></i>SGE
+      </a>
+      
+      <!-- Botão para colapsar o menu em dispositivos menores -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links e Menu -->
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <!-- Links principais -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contato</a>
+          </li>
+        </ul>
+
+        <!-- Dropdown do usuário -->
+        <div class="dropdown">
+          <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" data-bs-toggle="dropdown">
+            <img src="" alt="profile" width="32" height="32" class="rounded-circle me-2">
+            <strong>Usuário</strong>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark text-small shadow">
+            <li><a class="dropdown-item" href="#">Perfil</a></li>
+            <li><a class="dropdown-item" href="#">Configurações</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Sair</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
