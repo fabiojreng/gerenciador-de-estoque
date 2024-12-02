@@ -16,7 +16,6 @@ class ProductForm(forms.ModelForm):
             "expiry_date",
             "cost_price",
             "selling_price",
-            "quantity",
         ]
         widgets = {
             "title": forms.TextInput(attrs={"class": "form-control"}),
@@ -29,7 +28,6 @@ class ProductForm(forms.ModelForm):
             ),
             "cost_price": forms.NumberInput(attrs={"class": "form-control"}),
             "selling_price": forms.NumberInput(attrs={"class": "form-control"}),
-            "quantity": forms.NumberInput(attrs={"class": "form-control"}),
         }
         labels = {
             "title": "Título",
@@ -40,7 +38,6 @@ class ProductForm(forms.ModelForm):
             "expiry_date": "Data de Validade",
             "cost_price": "Preço de Custo",
             "selling_price": "Preço de Venda",
-            "quantity": "Quantidade",
         }
 
     def clean_expiry_date(self):
