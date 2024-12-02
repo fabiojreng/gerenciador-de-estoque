@@ -15,4 +15,4 @@ class Outflow(models.Model):
         ordering = ["-created_at"]
 
     def __str__(self) -> str:
-        return str(self.products)
+        return str(self.product)
